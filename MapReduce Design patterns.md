@@ -7,7 +7,7 @@ Degin patterns are general patterns to solve problems. 3 of the most common map 
 * Structural patterns
 
 
-##Filtering Design patterns:
+## Filtering Design patterns:
 
 don’t change records. Only get a part of the data!
 
@@ -17,7 +17,7 @@ Sampling is about pulling out a subset of the data for future processing. Typica
 sampling to extract a smaller but representative data set on which you could then perform further
 analysis.
 
-### Top 10
+#### Top 10
 
 An interesting application of mapreduce is making top N record lists. In RDBMS you would
 normally first sort the data, then take top N records. In mapreduce this kind of approach will not
@@ -38,13 +38,13 @@ There are couple of problems that can be solved by using similar approach:
 * inverted index: important when building a search engine or full text search functionality for your own
 website or application
 
-### Inverted Index
+#### Inverted Index
 
 It is often needed to build a reverse index from a data set, to enable faster searching. The obvious example would be a web search engine. You need to create a mapping from keywords to web links, to enable faster finding of relevant information. Think of it as an index for a book ­ you have a word, or term, and all pages you can find this term.
 
 While the pattern itself is simple ­mapper outputs each word as the key, the link being the value, you have to be conscious of the fact that this type of mapreduce is susceptible to uneven key distribution.
 
-### Numerical summarization
+#### Numerical summarization
 
 Common uses for this type of analysis are:
 
@@ -52,7 +52,7 @@ Common uses for this type of analysis are:
 
 * min/max/count
 
-### Mean and Standard Deviation
+#### Mean and Standard Deviation
 
 Let’s say that you want to know if there is any correlation between day of week and how much
 money people spend on items. Your task is to find out mean and standard deviation for sale per
